@@ -1,34 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,600,700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  We are launching soon!
+    <style>
 
-  Subscribe and get notified
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Libre Franklin', sans-serif;
+        color: hsl(0, 0%, 59%);
+      }
 
-  Notify Me
+      h1 {
+        font-size: 3em;
+        font-weight: 100;
+        margin-bottom: 0.25em;
+      }
 
-  &copy; Copyright Ping. All rights reserved.
+      h1 strong {
+        color: #000;
+        font-weight: 700;
+      }
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .ping {
+        width: 50%;
+        text-align: center;
+      }
+
+      .ping p {
+        margin-top: 0;
+        color: #000;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 0.75em;
+      }
+
+      .social {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social a {
+        border: 1px solid hsl(0, 0%, 89%);
+        border-radius: 50%;
+        background: #fff;
+        height: 35px;
+        width: 35px;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .social a:hover {
+        background: hsl(223, 87%, 63%);
+        border: 1px solid hsl(223, 87%, 63%);
+      }
+
+      .social a:hover i {
+        color: #fff;
+      }
+
+      .social i {
+        color: hsl(223, 87%, 63%);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="ping">
+      <img src="images/ping-logo.jpg" alt="Ping logo" />
+      <h1>We are launching <strong>soon!</strong></h1>
+      <p>Subscribe and get notified</p>
+      <form>
+        <input type="text" name="email" placeholder="Your email address..." />
+        <input type="submit" name="submit" value="Notify Me" />
+      </form>
+      <img
+        src="images/illustration-dashboard.png"
+        alt="Ping project dashboard"
+      />
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/joe.kotlan">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/Jkotlan">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/jkotlan/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="attribution">
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <p>Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://joekotlan.com">Joe Kotlan</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
